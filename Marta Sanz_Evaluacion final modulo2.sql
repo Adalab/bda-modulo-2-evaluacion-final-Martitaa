@@ -44,7 +44,30 @@ FROM film
 WHERE rating NOT IN ("R", "PG-13");
 
 -- 9. Encuentra la cantidad total de películas en cada clasificación de la tabla film y muestra la clasificación junto con el recuento.
-SELECT film
+SELECT rating, COUNT(*) AS total_peliculas
+FROM film
+GROUP BY rating;
 
+-- 10. Encuentra la cantidad total de películas alquiladas por cada cliente y muestra el ID del cliente, su nombre y apellido junto con la cantidad de películas alquiladas.
+SELECT 
+	c.customer_id, 
+    c.first_name, 
+    c.last_name,
+	COUNT(r.rental_id) AS total_peliculas_alquiladas
+FROM customer AS c
+INNER JOIN rental AS r ON c.customer_id = r.customer_id
+GROUP BY c.customer_id, c.first_name, c.last_name
+ORDER BY total_peliculas_alquiladas  DESC;
 
-SELECT film_id FROM film;
+-- 11. Encuentra la cantidad total de películas alquiladas por categoría y muestra el nombre de la categoría junto con el recuento de alquileres.
+
+SELECT
+	c.name,
+    COUNT(r.rental_id) AS total_peliculas_alquiladas
+FROM rental AS r
+INNER JOIN inventory AS i ON r.inventory_id = i.inventory_id
+INNER JOIN film_category AS fc ON i.film_id = fc.film_id
+INNER JOIN category AS c ON fc.category_id = c.category_id
+GROUP BY c.name
+ORDER BY total_peliculas_alquiladas DESC;
+
