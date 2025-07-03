@@ -8,7 +8,8 @@ ADALAB- Data Analyst- Promo 54
 
 ## Descripción del proyecto
 
-Este proyecto forma parte de la evaluación final del Módulo 2 del bootcamp de Adalab. El objetivo es aplicar conocimientos de bases de datos utilizando MySQL ![MySQL Logo](https://www.mysql.com/common/logos/logo-mysql-170x115.png)
+Este proyecto forma parte de la evaluación final del Módulo 2 del bootcamp de Adalab. El objetivo es aplicar conocimientos de bases de datos utilizando MySQL <img src="https://www.mysql.com/common/logos/logo-mysql-170x115.png" alt="MySQL Logo" width="50"/>
+
 
 La base de datos "Sakila" continee información sobre una tienda/videoclub incluye detalles de películas, actores, clientes, alquileres, inventario, categorias y pagos.
 
@@ -25,7 +26,7 @@ La base de datos "Sakila" continee información sobre una tienda/videoclub inclu
 
 ## Consultas realizadas con lenguaje SQL
 
-- SELECT, FROM, WHERE: para realizar consultas básicas sobre una o varias tablas.
+- SELECT, FROM, WHERE, SELECT DISTINT, LIKE: para realizar consultas básicas sobre una o varias tablas.
 
 - JOINs (INNER JOIN, LEFT JOIN): para combinar datos entre tablas relacionadas.
 
