@@ -47,6 +47,8 @@ La base de datos "Sakila" continee información sobre una tienda/videoclub inclu
 
 - `Marta Sanz_Evaluacion final modulo2.sql`: contiene todas las consultas SQL realizadas.
 - `README.md`:  la explicación del proyecto.
+- `detalle-bbdd-sakila.pdf` : muestra en detalle de qué variables se compone la bbdd "Sakila. 
+- `evaluacion-ii-pt.pdf`: en qué consiste el proyecto y sus diferentes fases. 
 
 ---
 
